@@ -1,0 +1,12 @@
+- job:
+  name: 01_clone_repo
+  
+  - scm:
+    name: clone-github
+    scm:
+      - git:
+        url: https://github.com/thomasmeeus/puppet-resolvconf.git 
+        branches:
+          - origin/master
+
+
